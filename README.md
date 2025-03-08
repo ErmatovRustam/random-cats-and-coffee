@@ -14,6 +14,16 @@ This is a simple web application that lets users:
 - **CSS**: Styling and layout of the app
 - **JavaScript**: Fetching data from APIs and handling user interactions
 
+### Sample Look
+<h2>Cat Generator</h2>
+<img width = 780px height = 525px src = './assets/cat.png'>
+<br />
+
+<h2>Coffee Generator</h2>
+<img width = 400px height = 665px src = './assets/coffee.png'>
+<br />
+
+
 ### How to Run Locally
 
 1. Clone the repository:
