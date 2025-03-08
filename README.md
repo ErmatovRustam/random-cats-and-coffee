@@ -20,7 +20,7 @@ This is a simple web application that lets users:
 <br />
 
 <h2>Coffee Generator</h2>
-<img width = 400px height = 665px src = './assets/coffee.png'>
+<img width = 500px height = 600px src = './assets/coffee.png'>
 <br />
 
 
