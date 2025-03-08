@@ -1,37 +1,110 @@
-body{
-    background-color: aquamarine;
-}
-
-header{
+/* General Page Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
     padding: 20px;
-    margin: 20px;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh; /* Ensures content stays inside the viewport */
+}
+
+/* Header Section */
+.header {
+    padding: 20px;
     text-align: center;
+    width: 100%;
+    position: fixed; /* Keeps the header at the top */
+    top: 0;
+    left: 0;
+    background-color: #f5f5f5; /* Matches background for seamless effect */
+    z-index: 10; /* Ensures header stays on top of other content */
 }
 
-.btn{
-  background: transparent;
-  background-color: rgb(216, 34, 74);
-  color: white;
-  border: 1px solid black;
-  padding: 10px 15px;
-  margin: 10px;
-  cursor: pointer;
+/* Button Styles */
+.btn-cat, .btn-coffee {
+    background-color: rgb(216, 34, 74);
+    color: white;
+    border: 1px solid black;
+    padding: 10px 15px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
 }
 
+.btn-cat:hover, .btn-coffee:hover {
+    background-color: rgb(180, 30, 60);
+}
 
-/* JS Style */
-.cats {
+/* Container for the cat images, coffee, content */
+.content {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60%;
-  }
-  
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    margin-top: 80px; /* Creates space for the fixed header */
+    padding: 10px;
+}
 
-  
-  img {
-    max-width: 700px;
-    height: 30rem;
-    background-repeat: no-repeat;
+/* Wrapper for each image */
+.cat-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
 
-  }
+/* Image Styles */
+.img-cat {
+    max-width: 100%;
+    max-height: 50vh; /* Ensure the image never exceeds 50% of the viewport height */
+    height: auto;
+    width: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for coffee divs */
+div.coffee {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+h5 {
+    font-size: 18px;
+    color: #777;
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+}
+
+img.coffee-img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 8px;
+}
